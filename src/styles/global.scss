@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: Arial, Helvetica, sans-serif;
+  color: #010f03;
+  background-color: #58a59b;
+}
+
+.listinha{
+  border: 1px dashed #121214;
+  border-radius: 25px;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+  list-style: none;
+  margin: 15px 0;
+  background-color: #d8e2dc;
+
+  strong{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    color: #002520;
+  }
+}
+
+.repository-list{
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  h1{
+    font-size: 2rem;
+  }
+}
