@@ -10,5 +10,5 @@ export function RepositoryItem(props) {
   );
 }
 
-// ?? usado para definir um valor padrão caso não venha nada do props
+// usar ?? para definir um valor padrão caso não venha nada do props
 // props.repository?.'algo'  => o ? serve como um validador..se for nulo, ele ignora e vai pra segunda opção.
