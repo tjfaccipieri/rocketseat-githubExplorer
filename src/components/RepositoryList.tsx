@@ -3,17 +3,14 @@ import { RepositoryItem } from './RepositoryItem';
 
 import '../styles/repositories.scss';
 
-// https://api.github.com/users/tjfaccipieri/repos
-
-// não vai ser mais usado..tava estatico pra testar
-// const repository = {
-//   name: 'Nome legal',
-//   description: 'Forms in react',
-//   link: 'https://github.com/tjfaccipieri',
-// };
+interface Repository {
+  name: string;
+  description: string;
+  html_url: string;
+}
 
 export function RepositoryList() {
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<Repository[]>([]);
 
   useEffect(() => {
     fetch('https://api.github.com/users/tjfaccipieri/repos')
